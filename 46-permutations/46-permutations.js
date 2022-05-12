@@ -10,7 +10,7 @@ var permute = function(letters) {
 
 function dfs(letters, path, used, res) {
     if (path.length == letters.length) {
-        res.push([...path]);
+        res.push(Array.from(path));
         return;
     }
     for (let i = 0; i < letters.length; i++) {
