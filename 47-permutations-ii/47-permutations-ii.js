@@ -20,12 +20,12 @@ var traverse = function (nums, index, currArray, result, used, memo) {
         if(used[i]) continue;
         currArray.push(nums[i]);
         used[i] = true;
-        if(memo.has(currArray.toString())) {
+        if(memo.has(currArray.join(''))) {
             currArray.pop();
             used[i] = false;
             continue;
         }
-        memo.add(currArray.toString());
+        memo.add(currArray.join(''));
         traverse(nums, index, currArray, result, used, memo);
         currArray.pop();
         used[i] = false;
