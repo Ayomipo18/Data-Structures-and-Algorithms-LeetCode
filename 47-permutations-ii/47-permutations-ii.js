@@ -32,29 +32,6 @@ var traverse = function (nums, index, currArray, result, used, memo) {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // var permuteUnique = function(nums) {
 //     const res = [];
 //     const length = nums.length;
