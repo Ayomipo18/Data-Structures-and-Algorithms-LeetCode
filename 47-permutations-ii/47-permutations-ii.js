@@ -12,8 +12,8 @@ var permuteUnique = function (nums) {
 
 var traverse = function (nums, index, currArray, result, used, memo) {
     if(currArray.length === nums.length) {
-        if(!memo.has(currArray.toString())) {
-           memo.add(currArray.toString());
+        if(!memo.has(currArray.join(''))) {
+           memo.add(currArray.join(''));
            result.push([...currArray]);
            return;
         }
