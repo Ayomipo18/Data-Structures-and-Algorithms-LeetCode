@@ -11,9 +11,6 @@ var longestPalindrome = function (s) {
           expandAroundCenter(lOdd, rOdd)
           //Even - 2 chars in the middle, like 'kbbk'
           let lEven = i, rEven = i + 1;
-          
-          
-          
           expandAroundCenter(lEven, rEven);
       }
     // helper
