@@ -9,7 +9,7 @@ var combine = function(n, k) {
     const backTrack = function(index, currArr) {
         if(currArr.length === k) {
             result.push([...currArr]);
-            //return;
+            return;
         }
         for(let i = index; i<=n; i++) {
             currArr.push(i);
