@@ -2,7 +2,7 @@ public class Solution {
     public int MaxScore(int[] cardPoints, int k) {
         int sum = 0, max = 0;
         
-        if( cardPoints.Length == k) {
+        if(cardPoints.Length == k) {
             // foreach(int point in cardPoints) {
             //     max += point;
             // }
