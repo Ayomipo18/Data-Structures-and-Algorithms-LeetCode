@@ -3,10 +3,11 @@ public class Solution {
         int sum = 0, max = 0;
         
         if( cardPoints.Length == k) {
-            foreach(int point in cardPoints) {
-                max += point;
-            }
-            return max;
+            // foreach(int point in cardPoints) {
+            //     max += point;
+            // }
+            // return max;
+            return cardPoints.Sum();
         }
         
         for(int i = 0; i< k; i++) {
