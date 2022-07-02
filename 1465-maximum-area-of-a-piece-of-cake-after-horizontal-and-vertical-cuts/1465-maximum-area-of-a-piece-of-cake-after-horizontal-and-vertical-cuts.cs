@@ -1,20 +1,24 @@
 public class Solution {
     public int MaxArea(int h, int w, int[] horizontalCuts, int[] verticalCuts) {
         
-        horizontalCuts = horizontalCuts.Append(h).ToArray();
+        long maxHeight = 0, maxWidth = 0, lastCutIndex = 0;
+        
         Array.Sort(horizontalCuts);
-        long maxHeight = horizontalCuts[0];
-        for(int i = 1; i < horizontalCuts.Length; i++) {
-            maxHeight = Math.Max(maxHeight, horizontalCuts[i] - horizontalCuts[i-1]);
-        }
-        
-        verticalCuts = verticalCuts.Append(w).ToArray();
         Array.Sort(verticalCuts);
-        long maxWidth = verticalCuts[0];
-        for(int i = 1; i < verticalCuts.Length; i++) {
-            maxWidth = Math.Max(maxWidth, verticalCuts[i] - verticalCuts[i-1]);
-        }
         
+        for(int i = 0; i < horizontalCuts.Length; i++) {
+            maxHeight = Math.Max(maxHeight, horizontalCuts[i] - lastCutIndex);
+            lastCutIndex = horizontalCuts[i];
+        }
+        maxHeight = Math.Max(maxHeight, h - lastCutIndex);
+        
+        lastCutIndex = 0;
+        for(int i = 0; i < verticalCuts.Length; i++) {
+            maxWidth = Math.Max(maxWidth, verticalCuts[i] - lastCutIndex);
+            lastCutIndex = verticalCuts[i];
+        }
+        maxWidth = Math.Max(maxWidth, w - lastCutIndex);
+
         return (int)(maxHeight * maxWidth % 1000000007);
     }
 }
