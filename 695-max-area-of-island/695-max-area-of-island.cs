@@ -20,12 +20,7 @@ public class Solution {
         if(i < 0 || i >= grid.Length || j < 0 || j >= grid[0].Length || grid[i][j] == 0) {
             return 0;
         }
-        count++;
         grid[i][j] = 0;
-        count += dfs(grid, i-1, j);
-        count += dfs(grid, i, j+1);
-        count +=  dfs(grid, i+1, j);
-        count += dfs(grid, i, j-1);
-        return count;
+        return (1 + dfs(grid, i-1, j) + dfs(grid, i, j+1) + dfs(grid, i+1, j) + dfs(grid, i, j-1));
     }
 }
