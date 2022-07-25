@@ -4,27 +4,9 @@ public class Solution {
         int right = nums.Length - 1;
         int firstPos;
         int lastPos;
-        int leftPos = -1;
-        int rightPos = -1;
-        int partitionIndex = -1;
         
-        while(left <= right) {
-            int middle = (left + right)/2;
-            if(nums[middle] == target) {
-                partitionIndex = middle;
-                break;
-            }
-            else if(nums[middle] > target) right = middle - 1;
-            else if(nums[middle] < target) left = middle + 1;
-        }
-        
-        if(partitionIndex > -1) {
-            leftPos = BinarySearchLeft(nums, 0, partitionIndex - 1, target);
-            rightPos = BinarySearchRight(nums, partitionIndex + 1, nums.Length - 1, target);
-        }
-        
-        firstPos = (leftPos == -1) ? partitionIndex : leftPos;
-        lastPos = (rightPos == -1) ? partitionIndex : rightPos;
+        firstPos = BinarySearchLeft(nums, left, right, target);
+        lastPos = BinarySearchRight(nums, left, right, target);
         
         int[] result = new int[]{firstPos, lastPos};
         return result;
@@ -39,8 +21,9 @@ public class Solution {
                 right = middle - 1;
             }
             else if(nums[middle] < target) left = middle + 1;
+            else right = middle - 1;
         }
-        return (index == -1) ? -1 : index;
+        return index;
     }
     
     public int BinarySearchRight(int[] nums, int left, int right, int target) {
@@ -52,7 +35,8 @@ public class Solution {
                 left = middle + 1;
             }
             else if(nums[middle] > target) right = middle - 1;
+            else left = middle + 1;
         }
-        return (index == -1) ? -1 : index;
+        return index;
     }
 }
