@@ -5,7 +5,7 @@ public class Solution {
             if(dict.ContainsKey(nums[i])) {
                 return new int[]{dict[nums[i]], i};
             }
-            else dict[target - nums[i]] = i;
+            dict[target - nums[i]] = i;
         }
         return new int[2];
     }
