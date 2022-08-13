@@ -13,22 +13,37 @@
  */
 public class Solution {
     public void Flatten(TreeNode root) {
-        dfs(root);
-        return;
+        helper(root);
     }
-    
-    public TreeNode dfs(TreeNode root) {
+
+    public TreeNode helper(TreeNode root) {
         if(root == null) return null;
-        
-        TreeNode left = dfs(root.left);
-        TreeNode right = dfs(root.right);
-        
-        if(left != null) {
-            left.right = root.right;
+        TreeNode leftMost = helper(root.left);
+        TreeNode rightMost = helper(root.right);
+        TreeNode right = root.right;
+        if(leftMost != null) {
             root.right = root.left;
-            root.left = null;
+            leftMost.right = right;
         }
-        
-        return right?? left?? root;
+        root.left = null;
+        return rightMost ?? leftMost ?? root;
     }
+    //1st
+    //root = 1
+    //root.left = 2
+    //leftmost = 4
+    //2nd
+    //root = 2
+    //root.left = 3
+    //leftmost = 3
+    //rightmost = 4
+    //2.right = 3;
+    //3.right = 4
+    // 4
+    //3rd
+    //root = 3
+    //root.left = null
+    //leftMost = null
+    //rightmost = null
+    //right = null
 }
