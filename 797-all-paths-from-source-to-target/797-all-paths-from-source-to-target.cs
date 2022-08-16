@@ -1,4 +1,5 @@
 public class Solution {
+    //time - O()
     IList<IList<int>> result = new List<IList<int>>();
     int length;
     
@@ -25,8 +26,6 @@ public class Solution {
         foreach(int connectingNode in graph[node]) {
             dfs(graph, connectingNode, path);
             path.RemoveAt(path.Count - 1);
-            // foreach(int p in path) Console.WriteLine(p);
-            // Console.WriteLine("count" + path.Count);
         }
         
         return;
