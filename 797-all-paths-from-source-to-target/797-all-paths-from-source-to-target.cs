@@ -1,5 +1,6 @@
 public class Solution {
-    //time - O()
+    //time - O(n) * 1^n
+    //space - O(n^2)
     IList<IList<int>> result = new List<IList<int>>();
     int length;
     
