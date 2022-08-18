@@ -1,4 +1,6 @@
 public class Solution {
+    //Time - O((numCourses + prerequisites) i.e O(V+E) worst case
+    //Space - O(numCourses + prerequisites) i.e O(V+E) worst case
     private List<IList<int>> graph = new List<IList<int>>();
     private HashSet<int> hashSet = new HashSet<int>();
     
