@@ -7,7 +7,6 @@ public class Solution {
     private List<int> result = new List<int>();
     
     public int[] FindOrder(int numCourses, int[][] prerequisites) {
-        numCourses = numCourses;
         for(int course = 0; course < numCourses; course++) {
             graph.Add(new List<int>());
         }
