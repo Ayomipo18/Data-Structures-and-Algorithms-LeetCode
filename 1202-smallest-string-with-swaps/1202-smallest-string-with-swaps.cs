@@ -1,23 +1,31 @@
 public class Solution {
+    //Final Space complexity - O(s.Length ^ 2)
+    //Final time complexity - O(Max(s.Length, pairs.Length))
+    
     public string SmallestStringWithSwaps(string s, IList<IList<int>> pairs) {
-        char[] charArray = s.ToCharArray(); //[d, c, a ,b]
+        char[] charArray = s.ToCharArray(); //[d, c, a, b] space/time -  O(s.Length)
         
         Dictionary<int, PriorityQueue<char, char>> dict = new(); 
         /*
+        space - O(s.Length/2 * s.Length) = O(s.Length ^ 2)
         {
         0: [[b, b], [d, d]]
         1: [[a, a], [c, c]]
         }
         */
-        UnionFind uf = new UnionFind(charArray.Length);
+        UnionFind uf = new UnionFind(charArray.Length); //time/space - O(s.Length)
         
-        foreach(List<int> pair in pairs) {
-            uf.Unify(pair[0], pair[1]); //(0,3) - (1,2)
+        foreach(List<int> pair in pairs) { //time - O(pairs.Length)
+            uf.Unify(pair[0], pair[1]); //(0,3) - (1,2) //time - 1^s.Length
         }
         
+        // foreach(var value in uf.parent) {
+        //     Console.WriteLine(value);
+        // }
+        
         //i = 0 - 1 - 2 - 3
-        for(int i = 0; i < charArray.Length; i++){
-            int parentId = uf.GetAbsoluteParent(i); //0 - 1 - 1 - 0
+        for(int i = 0; i < charArray.Length; i++){ // time - O(s.Length)
+            int parentId = uf.GetAbsoluteParent(i); //0 - 1 - 1 - 0 //time - 1^s.Length
             if(!dict.ContainsKey(parentId)) {
                 dict.Add(parentId, new PriorityQueue<char, char>());
             }
@@ -25,14 +33,14 @@ public class Solution {
         }
         
         //i = 0 - 1 - 2 - 3
-        for(int i = 0; i < charArray.Length; i++) {
-            int parentId = uf.GetAbsoluteParent(i); //0 - 1 - 1 - 0
+        for(int i = 0; i < charArray.Length; i++) { //time - O(s.Length)
+            int parentId = uf.GetAbsoluteParent(i); //0 - 1 - 1 - 0 //time - 1^s.Length
             
             //charArray = [b, a, c, d]
             charArray[i] = dict[parentId].Dequeue();
         }
         
-        return new string(charArray);
+        return new string(charArray); // time - O(s.Length)
     }
 }
 
