@@ -1,4 +1,6 @@
 public class Solution {
+    //time - O(n * m * 4 * m * n) 
+    //space - O(n*m)
     private IList<int[]> directions = new List<int[]>();
     
     public int NumDistinctIslands(int[][] grid) {
