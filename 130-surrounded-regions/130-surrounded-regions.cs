@@ -39,7 +39,6 @@ public class Solution {
         if(row < 0 || row >= board.Length || col < 0 || col >= board[0].Length || board[row][col] != 'O') {
             return;
         }
-        Console.WriteLine(board[row][col]);
         board[row][col] = 'Z';
         foreach(var direction in directions) {
             int nextRow = row + direction[0];
