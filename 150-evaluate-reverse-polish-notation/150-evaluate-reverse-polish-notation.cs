@@ -1,4 +1,6 @@
 public class Solution {
+    //time - O(n)
+    //space - O(n)
     public int EvalRPN(string[] tokens) {
         Stack<int> stack = new();
         for(int i = 0; i < tokens.Length; i++) {
