@@ -21,7 +21,7 @@ public class Solution {
         } else if(op == "-") {
             return firstNumber - secondNumber;
         } else if(op == "/") {
-            return Convert.ToInt32(firstNumber / secondNumber);
+            return firstNumber / secondNumber;
         }
         return firstNumber * secondNumber;;
     }
