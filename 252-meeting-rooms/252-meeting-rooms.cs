@@ -1,4 +1,7 @@
 public class Solution {
+    
+    //time - O(nlogn)
+    //space - O(1)
     public bool CanAttendMeetings(int[][] intervals) {
         Array.Sort(intervals, (a, b) => a[0].CompareTo(b[0]));
         for(int i = 1; i < intervals.Length; i++) {
