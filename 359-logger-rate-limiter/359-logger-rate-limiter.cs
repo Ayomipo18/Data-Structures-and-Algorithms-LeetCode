@@ -5,17 +5,16 @@ public class Logger {
     Dictionary<string, int> times;
     
     public Logger() {
-        times = new Dictionary<string, int>();
+        times = new();
     }
     
     public bool ShouldPrintMessage(int timestamp, string message) {
         if(times.ContainsKey(message)) {
-            if(timestamp - times[message] < 10) {
-                return false;
-            } else {
+            if(timestamp - times[message] >= 10) {
                 times[message] = timestamp;
                 return true;
             }
+            return false;
         } else {
             times.Add(message, timestamp);
             return true;
