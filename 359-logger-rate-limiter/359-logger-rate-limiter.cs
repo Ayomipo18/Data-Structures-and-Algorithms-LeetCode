@@ -5,7 +5,7 @@ public class Logger {
     Dictionary<string, int> times;
     
     public Logger() {
-        times = new();
+        times = new Dictionary<string, int>();
     }
     
     public bool ShouldPrintMessage(int timestamp, string message) {
