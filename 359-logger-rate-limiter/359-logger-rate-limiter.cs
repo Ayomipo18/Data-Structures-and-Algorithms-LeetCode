@@ -1,5 +1,5 @@
 public class Logger {
-    
+    //where n is the size of incoming messages
     //time - O(1)
     //space - O(n)
     Dictionary<string, int> times;
