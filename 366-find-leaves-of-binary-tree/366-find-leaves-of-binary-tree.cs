@@ -12,8 +12,11 @@
  * }
  */
 public class Solution {
-    List<int> currLevel;
-    IList<IList<int>> result = new List<IList<int>>();
+    //time - O(n)
+    //space - O(n)
+    //where n = number of nodes
+    List<int> currLevel; //space - O(n/2)
+    IList<IList<int>> result = new List<IList<int>>(); //space - O(n)
     
     public IList<IList<int>> FindLeaves(TreeNode root) {
         
