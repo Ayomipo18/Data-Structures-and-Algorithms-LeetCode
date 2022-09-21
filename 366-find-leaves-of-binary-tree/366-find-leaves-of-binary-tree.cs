@@ -11,6 +11,7 @@
  *     }
  * }
  */
+/*
 public class Solution {
     //time - O(n)
     //space - O(n)
@@ -72,3 +73,42 @@ public class Solution {
         return;
     }
 */
+
+public class Solution {
+    //time - O(n)
+    //space - O(n)
+    //where n = number of nodes
+    IList<IList<int>> result = new List<IList<int>>(); //space - O(n)
+    
+    public IList<IList<int>> FindLeaves(TreeNode root) {
+        dfs(root);
+        return result;
+    }
+    
+    private int dfs(TreeNode node) {
+        if(node == null) return -1;
+        int height = Math.Max(dfs(node.left), dfs(node.right)) + 1;
+        if(result.Count <= height) {
+            result.Add(new List<int>());
+        }
+        result[height].Add(node.val);
+        return height;
+    }
+}
+
+//create a result list to hold leaves per level
+//do dfs(root)
+//return result;
+
+//dfs(node)
+    //if(node == null) return -1;
+    //int height = Math.Max(dfs(node.left), dfs(node.right)) + 1
+    /*if(result.Count <= height) {
+        result.Add(new List<int>());
+    }
+    result[height].Add(node.val);
+    return level;
+    */
+//but we only create each leave list in our recursive function
+//also, we pass in the 
+//so [[],[],[]]
