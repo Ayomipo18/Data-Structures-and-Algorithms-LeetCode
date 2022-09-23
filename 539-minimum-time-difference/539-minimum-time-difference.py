@@ -1,4 +1,6 @@
 class Solution:
+    #time - O(nlogn)
+    #space - O(1)
     def findMinDifference(self, timePoints: List[str]) -> int:
         for i, time in enumerate(timePoints):
             hrs, minutes = time.split(":")
