@@ -5,27 +5,38 @@ public class Solution {
         int numBattleShips = 0;
         for(int i = 0; i < board.Length; i++) {
             for(int j = 0; j < board[0].Length; j++) {
-                if(board[i][j] == 'X') {
-                    numBattleShips++;
-                    dfs(board, i, j);
+                // if(board[i][j] == 'X') {
+                //     numBattleShips++;
+                //     dfs(board, i, j);
+                // }
+                if(board[i][j] == '.') {
+                    continue;
+                } 
+                if(i > 0 && board[i-1][j] == 'X') {
+                    continue;
                 }
+                if(j > 0 && board[i][j-1] == 'X') {
+                    continue;
+                }
+                numBattleShips++;
             }
         }
         return numBattleShips;
     }
-    
-    private void dfs(char[][] board, int row, int col) {
-        if(row < 0 || row >= board.Length || col < 0 || col >= board[0].Length || board[row][col] != 'X') {
-            return;
-        }
-        
-        board[row][col] = '.';
-        dfs(board, row-1, col);
-        dfs(board, row, col+1);
-        dfs(board, row+1, col);
-        dfs(board, row, col-1);
-    }
 }
+    
+//     private void dfs(char[][] board, int row, int col) {
+//         if(row < 0 || row >= board.Length || col < 0 || col >= board[0].Length || board[row][col] != 'X') {
+//             return;
+//         }
+        
+//         board[row][col] = '.';
+//         dfs(board, row-1, col);
+//         dfs(board, row, col+1);
+//         dfs(board, row+1, col);
+//         dfs(board, row, col-1);
+//     }
+// }
 
 //go through the matrix, if we see X, increase battleship and do dfs
 //inside our dfs, if we see that the adjacent values of our cell is X, we want to change it to .
