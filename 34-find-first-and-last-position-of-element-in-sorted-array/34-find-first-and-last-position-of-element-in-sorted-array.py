@@ -1,4 +1,6 @@
 class Solution:
+    #time - O(logn)
+    #space - O(1)
     def searchRange(self, nums: List[int], target: int) -> List[int]:
         if len(nums) == 0:
             return [-1, -1]
