@@ -14,6 +14,7 @@ class Solution:
                 starting_position = i + 1
                 
         return starting_position if total_tank >= 0 else -1
+    
 #have three variables one for total_tank, one for curr_tank(which gets reset to 0), then starting_position
 #loop through has array
     #calculate total_tank = gas[i] - cost[i]
