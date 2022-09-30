@@ -1,6 +1,6 @@
 class Solution:
     #time - O(n)
-    #space - O(n)
+    #space - O(1)
     #where n = length of nums
     def productExceptSelf(self, nums: List[int]) -> List[int]:
         result = [0] * len(nums)
