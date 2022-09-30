@@ -1,6 +1,7 @@
 class Solution:
     #time - O(n)
     #space - O(n)
+    #where n = length of nums
     def productExceptSelf(self, nums: List[int]) -> List[int]:
         prefix = [nums[0]] * len(nums)
         suffix = [nums[-1]] * len(nums)
