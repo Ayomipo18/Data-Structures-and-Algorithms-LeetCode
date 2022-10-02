@@ -1,4 +1,6 @@
 class Solution:
+    #time - O(n)
+    #space - O(n)
     def sortPeople(self, names: List[str], heights: List[int]) -> List[str]:
         from queue import PriorityQueue
         pq = PriorityQueue()
