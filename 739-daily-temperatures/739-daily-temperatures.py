@@ -1,6 +1,10 @@
 class Solution:
+    #time - O(n)
+    #space - O(n)
+    #where n is the length of temperatures
     def dailyTemperatures(self, temperatures: List[int]) -> List[int]:
         from collections import deque
+        
         result = [0] * len(temperatures)
         stack = deque()
         
