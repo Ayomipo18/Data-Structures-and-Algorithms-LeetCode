@@ -1,4 +1,6 @@
 public class Solution {
+    //time - O(n)
+    //space - O(n)
     public int[] DailyTemperatures(int[] temperatures) {
         int length = temperatures.Length;
         int[] result = new int[length];
