@@ -1,4 +1,6 @@
 class Solution:
+    #time - O(n)
+    #space - O(1)
     def findDuplicates(self, nums: List[int]) -> List[int]:
         result = []
         
@@ -13,9 +15,6 @@ class Solution:
             
         
 #sorting was helping me group numbers together, same as hashmap
-#[4,3]
-#each value in array corres to an index
-#check at second value seeing and do something before then
 
 #[0,1,2,3,4,5,6,7]
 
