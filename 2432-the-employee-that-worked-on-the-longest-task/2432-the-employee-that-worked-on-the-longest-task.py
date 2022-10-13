@@ -1,5 +1,5 @@
 class Solution:
-    #time - O(nlogn)
+    #time - O(n)
     #space - O(1)
     def hardestWorker(self, n: int, logs: List[List[int]]) -> int:
         hardest_worker = logs[0][0]
