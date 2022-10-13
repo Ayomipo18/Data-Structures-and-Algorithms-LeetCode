@@ -11,9 +11,7 @@ class Solution:
         for i, interval in enumerate(intervals):
             if not pq.empty() and pq.queue[0] < interval[0]:
                 pq.get()
-                pq.put(interval[1])
-            else: 
-                pq.put(interval[1])
+            pq.put(interval[1])
                 
         return pq.qsize()
             
