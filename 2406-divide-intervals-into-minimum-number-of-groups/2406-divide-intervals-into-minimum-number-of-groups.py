@@ -1,4 +1,6 @@
 class Solution:
+    #time - O(nlogn)
+    #space - O(n)
     def minGroups(self, intervals: List[List[int]]) -> int:
         from queue import PriorityQueue
         
