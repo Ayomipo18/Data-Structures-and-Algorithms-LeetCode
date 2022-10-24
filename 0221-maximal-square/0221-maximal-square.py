@@ -5,16 +5,34 @@ class Solution:
         n = len(matrix)
         m = len(matrix[0])
         
-        dp = [[-1 for i in range(m)] for j in range(n)]
-        self.dfs(0, 0, matrix, dp)
+        max_length = 0
         
-        result = float('-inf')
+        dp = [[0 for i in range(m)] for j in range(n)]
         
         for i in range(n):
-            for j in range(m):
-                result = max(dp[i][j], result)
+            dp[i][m-1] = int(matrix[i][m-1])
+            max_length = max(max_length, dp[i][m-1])
+            
+        for i in range(m):
+            dp[n-1][i] = int(matrix[n-1][i])
+            max_length = max(max_length, dp[n-1][i])
+            
+        for i in range(n-2, -1, -1):
+            for j in range(m-2, -1, -1):
+                if matrix[i][j] != "0":
+                    dp[i][j] = int(matrix[i][j]) + min(dp[i][j+1], dp[i+1][j+1], dp[i+1][j])
+                    max_length = max(max_length, dp[i][j])
+        return max_length * max_length
                 
-        return result * result
+#         self.dfs(0, 0, matrix, dp)
+        
+#         result = float('-inf')
+        
+#         for i in range(n):
+#             for j in range(m):
+#                 result = max(dp[i][j], result)
+                
+#         return result * result
         
     def dfs(self, row, col, matrix, dp):
         if row >= len(matrix) or col >= len(matrix[0]):
