@@ -44,13 +44,6 @@ class NumArray:
     def sumRange(self, left: int, right: int) -> int:
         return self.b.query(right+1) - self.b.query(left)
             
-
-'''
-sum = [0, 1, 4, 9]
-diff = [1,0,0,-1]
-a = [1,4,9,-1]
-return a[right]
-'''
 # Your NumArray object will be instantiated and called as such:
 # obj = NumArray(nums)
 # obj.update(index,val)
