@@ -1,5 +1,5 @@
 class Solution:
-        
+    #time - O(n*m)
     def findBall(self, grid: List[List[int]]) -> List[int]:
         self.grid = grid
         self.result = []
