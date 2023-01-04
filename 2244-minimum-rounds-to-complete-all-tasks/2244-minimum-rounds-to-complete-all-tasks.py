@@ -22,5 +22,5 @@ class Solution:
                 rounds += ((val - 4) // 3) + 2
             elif val % 3 == 2:
                 rounds += (val // 3) + 1
-        return rounds if rounds > 0 else -1
+        return rounds
         
