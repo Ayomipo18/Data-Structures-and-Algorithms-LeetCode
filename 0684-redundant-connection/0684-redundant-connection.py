@@ -1,3 +1,7 @@
+'''
+time complexity - O(nlogn)
+space complexity - O(n)
+'''
 class DSU:
     def __init__(self, size):
         self.parents = [i for i in range(size)]
