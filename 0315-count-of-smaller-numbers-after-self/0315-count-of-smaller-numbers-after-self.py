@@ -4,16 +4,15 @@ class SegmentTree:
         height = math.ceil(math.log2(n))
         size = (2 * (2**height)) - 1
         self.st_arr = [0] * size
-        min_val, max_val = min(nums), max(nums)
     
-    def query(self, index, s_left, s_right, target):
+    def query(self, index, s_left, s_right, min_val, target):
         if target >= s_right:
             return self.st_arr[index]
-        elif target < s_left:
+        elif target < s_left or min_val > s_right:
             return 0
         else:
             mid = s_left + (s_right - s_left) //2
-            return self.query(2*index+1, s_left, mid, target) + self.query(2*index+2, mid+1, s_right, target)
+            return self.query(2*index+1, s_left, mid, min_val, target) + self.query(2*index+2, mid+1, s_right, min_val, target)
     
     def update(self, index, s_left, s_right, target):
         if s_left > target or s_right < target:
@@ -39,10 +38,11 @@ class Solution:
         
     def countSmaller(self, nums: List[int]) -> List[int]:
         st, n, offset = SegmentTree(nums), len(nums), 10**4
+        min_val = min(nums)
         result = [0] * n
         
         for i in range(n-1, -1, -1):
-            result[i] = st.query(0, 0, 2 * offset, nums[i]+offset-1)
+            result[i] = st.query(0, 0, 2 * offset, min_val + offset, nums[i]+offset-1)
             st.update(0, 0, 2 * offset, nums[i]+offset)
         
         return result
