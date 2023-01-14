@@ -17,9 +17,9 @@ class SegmentTree:
 #         return self.st_arr[index]
     
     def query(self, index, s_left, s_right, target):
-        if s_left == target and s_right == target:
-            return 0
-        if target > s_right:
+        # if s_left == target and s_right == target:
+        #     return 0
+        if target >= s_right:
             return self.st_arr[index]
         elif target < s_left:
             return 0
@@ -54,7 +54,7 @@ class Solution:
         result = [0] * n
         
         for i in range(n-1, -1, -1):
-            result[i] = st.query(0, 0, 2 * offset, nums[i]+offset)
+            result[i] = st.query(0, 0, 2 * offset, nums[i]+offset-1)
             st.update(0, 0, 2 * offset, nums[i]+offset)
         
         return result
