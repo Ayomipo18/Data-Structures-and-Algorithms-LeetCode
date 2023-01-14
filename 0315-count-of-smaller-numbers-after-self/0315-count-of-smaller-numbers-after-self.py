@@ -7,14 +7,14 @@ class SegmentTree:
         min_val, max_val = min(nums), max(nums)
         #self.construct(nums, 0, min_val, max_val)
         
-    def construct(self, nums, index, left, right):
-        if left == right:
-            self.st_arr[index] = nums[left]
-            return nums[left]
+#     def construct(self, nums, index, left, right):
+#         if left == right:
+#             self.st_arr[index] = nums[left]
+#             return nums[left]
         
-        mid = left + (right-left)//2
-        self.st_arr[index] = self.construct(nums, 2*index+1, left, mid) + self.construct(nums, 2*index+2, mid+1, right)
-        return self.st_arr[index]
+#         mid = left + (right-left)//2
+#         self.st_arr[index] = self.construct(nums, 2*index+1, left, mid) + self.construct(nums, 2*index+2, mid+1, right)
+#         return self.st_arr[index]
     
     def query(self, index, s_left, s_right, target):
         if s_left == target and s_right == target:
