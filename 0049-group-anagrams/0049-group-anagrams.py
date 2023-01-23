@@ -6,6 +6,7 @@ class Solution:
     - then add the string to its corresponding hashmap key
     - at the end return hashmap.values()
     time - O(m*klogk)
+    space - O(klogk)
     m is the length of strs array
     k is the max length of word
     
@@ -15,7 +16,12 @@ class Solution:
     - we convert this array to a tuple
     - use the tuple as a key in our hashmap and append str that match our hashmap key
     - return hashmap.values()
+    time - O(m*k)
+    space - O(m*k)
+    m is the length of strs array
+    k is the max length of word
     '''
+    
     def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
         result = defaultdict(list)
         
