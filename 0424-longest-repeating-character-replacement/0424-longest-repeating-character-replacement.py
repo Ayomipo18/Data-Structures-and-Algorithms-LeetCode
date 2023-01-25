@@ -16,15 +16,15 @@ class Solution:
         
         while r < len(s):
             count[s[r]] += 1
-            #maxfreq = max(maxfreq, count[s[r]])
+            maxfreq = max(maxfreq, count[s[r]])
             
-            if (r-l+1) - max(count.values()) > k:
+            # if (r-l+1) - max(count.values()) > k:
+            #     count[s[l]] -= 1
+            #     l += 1
+                
+            if (r-l+1) - maxfreq > k:
                 count[s[l]] -= 1
                 l += 1
-                
-            # if (r-l+1) - maxfreq > k:
-            #     count[s[r]] -= 1
-            #     l += 1
             
             res = max(res, r-l+1)
             r += 1
