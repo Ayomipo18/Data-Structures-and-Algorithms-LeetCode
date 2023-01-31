@@ -9,8 +9,9 @@ class Solution:
     - to_process = [2(2), 3(1)]
     - CPU1 - 0(1-3) -> 1(8-12)
     - CPU - 0(1-3) -> 2(3-5) -> 3(5-6) -> 1(6-10)
-    
     [(2,0)]
+    - time - O(nlogn)
+    - space - O(nlogn)
     '''
     def getOrder(self, tasks: List[List[int]]) -> List[int]:
         result, minHeap = [], []
