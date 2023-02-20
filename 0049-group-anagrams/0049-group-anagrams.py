@@ -25,10 +25,6 @@ class Solution:
     def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
         result = defaultdict(list)
         
-        # for str_val in strs:
-        #     key = ''.join(sorted(str_val))
-        #     result[key].append(str_val)
-        
         for str_val in strs:
             count = [0] * 26
             for s in str_val:
@@ -36,3 +32,7 @@ class Solution:
             result[tuple(count)].append(str_val)
             
         return result.values()
+    
+        for str_val in strs:
+            key = ''.join(sorted(str_val))
+            result[key].append(str_val)
