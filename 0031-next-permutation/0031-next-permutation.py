@@ -1,69 +1,53 @@
 class Solution:
     '''
-    [1,2,3] - 
-    [3,2,1] - 
-    [2,1,3] -
-    - find the rightmost peak value
-    - when found, check if there is a value immediatley after rightmost value till the end of aray that is in between rightmost peak index and righmost peak index - 1
-    - if there is, swap the value and value at righmost peak index - 1
-    - else swap the value at rightmost peak index and righmost peak index - 1
-    - then  sort the string from rightmost index till end of array
     time - O(nlogn)
-    space - O(n), due to sorting
+    space - O(n)
+    where n is the lenght of nums
+    case 1 : [1,2,3] -> [1,3,2] -> all asc, swap last two values
+    case 2 : [3,2,1] -> all desc, swap from both ends
+    case 3 : [2,1,3] -> [2,3,1]
+    case 4 : [2,1,6,4,8] -> [2,1,6,8,4]
+    case 5 : [2,1,6,9,8] -> [2,1,8,6,9]
+    case 5 : [2,1,6,4,3,2,1] -> [2,2,1,1,3,4,6] 
+    case 6 : [2,1,1,2,3,4,6] -> [2,1,2,1,3,4,6]
+    - basically, two cases
+    case 1 : if all desc; [4,3,2,1], no peak, then swap the values and return
+    case 2 : if there is peak(from taking rightmost peak), from that rightmost peak-1, find number to the right that is greater than peak-1
+    HOW TO SWAP
+    - swap the pair with the lowest weightage to get next greater sequence(swap the last peak with left element)
+    -case, all in desc order, just swap
+    [  1,   2,    3,    2,    3]
+    [10^4, 10^3, 10^2, 10^1, 10^0]
     '''
     def nextPermutation(self, nums: List[int]) -> None:
-        peak, i = -1, 1
-        n = len(nums)
-        
-        if n == 1:
+        if len(nums) == 1:
             return nums
-        
-        while i < n:
+
+        peak, i = -1, 1
+
+        while i < len(nums):
             if nums[i] > nums[i-1]:
                 peak = i
             i += 1
-        
+
         if peak == -1:
-            start, end = 0, n-1
-            while start < end:
-                self.swap(nums, start, end)
-                start += 1
-                end -= 1
+            for i in range(len(nums)//2):
+                self.swap(i, len(nums)-1-i, nums)
             return nums
-        
-        index = peak
-        for i in range(peak+1, n):
+
+        i, index = peak + 1, peak
+
+        while i < len(nums):
             if nums[i] > nums[peak-1] and nums[i] < nums[peak]:
                 index = i
             i += 1
-        
-        self.swap(nums, peak-1, index)
+
+        self.swap(peak-1, index, nums)
         nums[peak:] = sorted(nums[peak:])
-        
+
         return nums
-        
-        
-    def swap(self, nums, i, j):
-        temp = nums[i]
-        nums[i] = nums[j]
-        nums[j] = temp
-        
-#         i = len(nums) - 2
-#         while i >= 0 and nums[i+1] <= nums[i]:
-#             i -= 1
-#         print(i)
-#         if i >= 0:
-#             j = len(nums) - 1
-#             while nums[j] <= nums[i]:
-#                 j -= 1
-#             print(j)
-#             self.swap(nums, i, j)
-#         self.reverse(nums, i+1)
 
-
-#     def reverse(self, nums, index):
-#         start, end = index, len(nums)-1
-#         while start < end:
-#             self.swap(nums, start, end)
-#             start += 1
-#             end -= 1
+    def swap(self, left, right, nums):
+        temp = nums[left]
+        nums[left] = nums[right]
+        nums[right] = temp
