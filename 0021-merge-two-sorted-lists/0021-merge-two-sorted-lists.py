@@ -14,17 +14,18 @@ class Solution:
         dummy = ListNode()
         result = dummy
         
-        while list1 or list2:
-            val1 = list1.val if list1 else 1000
-            val2 = list2.val if list2 else 1000
+        while list1 and list2:
             
-            if val1 <= val2 :
+            if list1.val <= list2.val:
                 dummy.next = ListNode(list1.val)
-                list1 = list1.next if list1 else None
+                list1 = list1.next
             else:
                 dummy.next = ListNode(list2.val)
-                list2 = list2.next if list2 else None
-
+                list2 = list2.next
+                
             dummy = dummy.next
+            
+        if list1 or list2:
+            dummy.next = list1 if list1 else list2
             
         return result.next
