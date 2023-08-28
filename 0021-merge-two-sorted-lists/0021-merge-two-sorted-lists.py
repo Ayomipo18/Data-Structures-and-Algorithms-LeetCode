@@ -7,6 +7,8 @@ class Solution:
     def mergeTwoLists(self, list1: Optional[ListNode], list2: Optional[ListNode]) -> Optional[ListNode]:
         '''
         - go through both lists and compare each current nodes, which ever is higher, put in the result and move the node in the list
+        space - O(list1 + list2)
+        time - O(List1 + list2)
         '''
         
         dummy = ListNode()
