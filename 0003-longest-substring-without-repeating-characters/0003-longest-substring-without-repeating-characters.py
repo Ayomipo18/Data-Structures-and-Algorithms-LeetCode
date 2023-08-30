@@ -1,5 +1,10 @@
 class Solution:
     def lengthOfLongestSubstring(self, s: str) -> int:
+        '''
+        time - O(n)
+        space - O(n)
+        where n is the length of string s
+        '''
         if len(s) == 0:
             return 0
         
