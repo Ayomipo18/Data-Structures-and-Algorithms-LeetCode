@@ -8,16 +8,19 @@ class Solution:
             - anytime i also see a land(1), set it to 0, which is water.
             - so how do i return the number of islands
              - anytime i see a 1(which is land), i immediately count it as an island, then the dfs function goes to set all its surroudning neigbour to water.
-             
+        
         - count = 0 -> 1
         start 0,0
+        
+        - time complexity - O(m*n) + O(m*n)
+        - space - O(m*n)
         '''
         
         m = len(grid)
         n = len(grid[0])
         count = 0
         
-        for i in range(m):
+        for i in range(m): #O(m*n)
             for j in range(n):
                 if grid[i][j] == '1':
                     count += 1
