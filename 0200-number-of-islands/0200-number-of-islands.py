@@ -5,7 +5,8 @@ class Solution:
         - BFS
         - involves mainly using a queue
         - so as usual if i see a land('1'), i put it in my queue
-        
+        - time - O(m*n)
+        - space - O(min(m,n)
         
         - DFS
         - i want to go through all the values in the grid
