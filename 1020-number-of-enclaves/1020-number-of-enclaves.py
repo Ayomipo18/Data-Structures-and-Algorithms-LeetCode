@@ -5,6 +5,8 @@ class Solution:
             - if you see a valu 1 in a cell, run dfs from there and set the cell to 0
             - in the dfs, run in all directions and if you see an out of bounds or a 0, just return, else go to set it to zero and run dfs in 4 directions
         - go through each value, if you see a count, do a count += 1
+        time - O(m*n)
+        space - O(m*n)
         '''
         
         m = len(grid)
