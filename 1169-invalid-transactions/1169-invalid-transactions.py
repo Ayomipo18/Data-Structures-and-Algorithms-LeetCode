@@ -14,8 +14,8 @@ class Solution:
             - i will say if a value is an invalid transaction and not in set already, add it
             - doesn't even matter, cos set will make it unique
             
-        time complexity - O(nlogn) + O(n*n)
-        space - O(nlogn) + O(n)
+        time complexity - O(n*n)
+        space - O(n)
         '''
         
         result = []
