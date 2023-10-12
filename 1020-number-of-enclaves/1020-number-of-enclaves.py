@@ -14,6 +14,8 @@ class Solution:
         - for bfs, push the cell that is a land(1) into the queue
             - then, while there is a val in the queue, pop it out and set that value 0
             - also, check the remaining adj sides of the cell and if it is not out of bounds or it is a 1, push it to the queue
+            time - O(m*n)
+            space - O(min(m,n))
         '''
         
         m = len(grid)
