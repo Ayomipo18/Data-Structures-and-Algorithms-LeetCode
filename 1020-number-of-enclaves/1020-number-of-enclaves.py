@@ -19,26 +19,27 @@ class Solution:
         m = len(grid)
         n = len(grid[0])
         count = 0
+        visited = set()
         
         for i in range(m):
             if grid[i][0] == 1:
-                self.bfs(i, 0, grid)
+                self.bfs(i, 0, grid, visited)
                 
         for i in range(m):
             if grid[i][n-1] == 1:
-                self.bfs(i, n-1, grid)
+                self.bfs(i, n-1, grid, visited)
                 
         for i in range(n):
             if grid[0][i] == 1:
-                self.bfs(0, i, grid)
+                self.bfs(0, i, grid, visited)
                 
         for i in range(n):
             if grid[m-1][i] == 1:
-                self.bfs(m-1, i, grid)
+                self.bfs(m-1, i, grid, visited)
                 
         for i in range(m):
             for j in range(n):
-                if grid[i][j] == 1:
+                if grid[i][j] == 1 and (i,j) not in visited:
                     count += 1
                     
         return count
@@ -54,17 +55,17 @@ class Solution:
 #         self.dfs(row, col-1, grid)
 #         self.dfs(row, col+1, grid)
         
-    def bfs(self, row, col, grid):
+    def bfs(self, row, col, grid, visited):
         q = collections.deque()
         dirs = [[1,0], [-1,0], [0,1], [0,-1]]
         q.append((row, col))
-        grid[row][col] = 0
+        visited.add((row, col))
         
         while q:
             r, c = q.popleft()
             
             for dir in dirs:
-                if r + dir[0] < 0 or r + dir[0] >= len(grid) or c + dir[1] < 0 or c + dir[1] >= len(grid[0]) or grid[r+dir[0]][c+dir[1]] == 0:
+                if r + dir[0] < 0 or r + dir[0] >= len(grid) or c + dir[1] < 0 or c + dir[1] >= len(grid[0]) or grid[r+dir[0]][c+dir[1]] == 0 or (r+dir[0],c+dir[1]) in visited:
                     continue
                 q.append((r+dir[0], c+dir[1]))
-                grid[r+dir[0]][c+dir[1]] = 0
+                visited.add((r+dir[0],c+dir[1]))
