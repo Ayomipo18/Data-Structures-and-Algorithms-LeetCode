@@ -20,7 +20,7 @@ class Solution:
         - at 7 - {3,5,2}
         - at 4 - {3,5,2}
         
-        time - O(logn)
+        time - O(logn) + O(logn*logn)
         space - O(n)
         where n is the number of nodes
         '''
