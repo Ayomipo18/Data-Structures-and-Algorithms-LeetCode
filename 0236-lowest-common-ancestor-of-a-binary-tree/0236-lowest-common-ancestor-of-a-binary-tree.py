@@ -14,8 +14,8 @@ class Solution:
         where n is the number of nodes
         
         solution 2
-        time - O(logn)
-        space - O(logn)
+        time - O(n)
+        space - O(n)
         '''
         
         if not root:
