@@ -10,6 +10,7 @@ class Solution:
         - use bfs
         - priortize right, then left
         - if a value for that particular level has been filled, don't replace it, else, replace int in the result array
+        
         where n is the number of nodes
         time - O(n)
         space - O(logn)
