@@ -1,5 +1,8 @@
 class Solution:
     def generate(self, numRows: int) -> List[List[int]]:
+        '''
+        - O(n*n)
+        '''
         result = [[1]]
         if numRows < 2:
             return result
