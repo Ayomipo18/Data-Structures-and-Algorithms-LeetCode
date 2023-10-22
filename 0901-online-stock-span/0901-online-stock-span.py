@@ -14,3 +14,8 @@ class StockSpanner:
 # Your StockSpanner object will be instantiated and called as such:
 # obj = StockSpanner()
 # param_1 = obj.next(price)
+
+'''
+t - O(n)
+s - O(n)
+'''
