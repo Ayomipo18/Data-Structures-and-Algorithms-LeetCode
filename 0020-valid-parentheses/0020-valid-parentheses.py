@@ -1,19 +1,19 @@
 class Solution:
     def isValid(self, s: str) -> bool:
-        dict = {
-            ']': '[',
-            ')': '(',
-            '}': '{'
-        }
         stack = []
+        stack_map = {
+            "}": "{",
+            "]": "[",
+            ")": "("
+        }
         
-        for character in s:
-            if character in dict:
-                if stack and dict[character] == stack[-1]:
-                    stack.pop()
-                else:
-                    return False
+        if len(s) < 2:
+            return False
+        
+        for val in s:
+            if val in stack_map and stack and stack[len(stack)-1] == stack_map[val]:
+                stack.pop()
             else:
-                stack.append(character)
+                stack.append(val)
                 
         return len(stack) == 0
