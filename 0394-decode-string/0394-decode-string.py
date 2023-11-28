@@ -5,6 +5,13 @@ class Solution:
         - if i see an end bracket in my string, that's a cue to go to my stack and process the characters until i see [
         - then gather all the digits after and multiply by the string processed.
         - push the procesed string back into the stack.
+        
+        For, s = 10[ab10[cd]]10[ef], 
+        Time complexity would be roughly equivalent to 10∗cd∗10∗ab+10∗2 = 10^2∗2
+        Hence, for an encoded pattern of form maxK[nmaxK[n]], the time complexity to decode the pattern can be given as, O((maxK^countK)⋅n)
+        
+        Space Complexity: O(sum((maxK^countK)⋅n)), where maxK is the maximum value of k, countK is the count of nested k values and n is the maximum length of encoded string.
+        The maximum stack size would be equivalent to the sum of all the decoded strings in the form maxK[nmaxK[n]]
         '''
         
         stack = []
