@@ -31,7 +31,8 @@ class RandomizedSet:
         return res
         
     def getRandom(self) -> int:
-        return random.choice(self.numList)
+        #return random.choice(self.numList)
+        return self.numList[random.randint(0, len(self.numList)-1)]
 
 # Your RandomizedSet object will be instantiated and called as such:
 # obj = RandomizedSet()
