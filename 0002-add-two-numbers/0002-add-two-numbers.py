@@ -12,6 +12,8 @@ class Solution:
         - if l2 value is null, make it zero
         - Also, if l1.next doesn't exist, don't move
         - Also, if l2.next doesn't exist, don't move
+        - time - O(max(len(l1, l2)))
+        - time - O(max(len(l1, l2)))
         '''
         carry = 0
         result = ListNode()
