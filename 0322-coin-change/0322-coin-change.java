@@ -11,8 +11,15 @@ class Solution {
     - S - amount
     - time - O(NxS)
     - Space - O(S)
+
+    bottom up approach with memoization
+    - N - coins.length
+    - S - amount
+    - time - O(NxS)
+    - Space - O(S)
     */
     public int coinChange(int[] coins, int amount) {
+        /*
         int[] memo = new int[amount+1];
         for(int i=0; i<memo.length; i++) {
             memo[i] = -1;
@@ -23,6 +30,27 @@ class Solution {
             return -1;
         }
         return ans;
+        */
+
+        int[] memo = new int[amount+1];
+        for(int i=0; i<memo.length; i++) {
+            memo[i] = amount+1;
+        }
+
+        memo[0] = 0;
+
+        for(int i=1; i<memo.length; i++){
+            for(int coin: coins){
+                if(i-coin >= 0) {
+                    memo[i] = Math.min(memo[i], 1+memo[i-coin]);
+                }
+            }
+        }
+
+        if (memo[amount] > amount) {
+            return -1;
+        }
+        return memo[amount];
     }
 
     public int dp(int[] coins, int amount, int[] memo) {
