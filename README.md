@@ -7,6 +7,7 @@ Collection of my solutions to LeetCode questions in C#, Python and Javascript - 
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0283-move-zeroes](https://github.com/Ayomipo18/Data-Structures-and-Algorithms-LeetCode/tree/main/0283-move-zeroes/) | Easy |
+| [0322-coin-change](https://github.com/Ayomipo18/Data-Structures-and-Algorithms-LeetCode/tree/main/0322-coin-change/) | Medium |
 | [1877-minimize-maximum-pair-sum-in-array](https://github.com/Ayomipo18/Data-Structures-and-Algorithms-LeetCode/tree/main/1877-minimize-maximum-pair-sum-in-array/) | Medium |
 | [1886-determine-whether-matrix-can-be-obtained-by-rotation](https://github.com/Ayomipo18/Data-Structures-and-Algorithms-LeetCode/tree/main/1886-determine-whether-matrix-can-be-obtained-by-rotation/) | Easy |
 ## Two Pointers
@@ -26,4 +27,12 @@ Collection of my solutions to LeetCode questions in C#, Python and Javascript - 
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [1886-determine-whether-matrix-can-be-obtained-by-rotation](https://github.com/Ayomipo18/Data-Structures-and-Algorithms-LeetCode/tree/main/1886-determine-whether-matrix-can-be-obtained-by-rotation/) | Easy |
+## Dynamic Programming
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0322-coin-change](https://github.com/Ayomipo18/Data-Structures-and-Algorithms-LeetCode/tree/main/0322-coin-change/) | Medium |
+## Breadth-First Search
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0322-coin-change](https://github.com/Ayomipo18/Data-Structures-and-Algorithms-LeetCode/tree/main/0322-coin-change/) | Medium |
 <!---LeetCode Topics End-->
