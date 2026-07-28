@@ -1,12 +1,12 @@
 class Solution {
     /*
-    Bottom up recursive approach without memoization
+    top down recursive approach without memoization
     - N - coins.length
     - S - amount
     - time - O(N^S)
     - Space - O(S)
 
-    Bottom up recursive approach with memoization
+    top down recursive approach with memoization
     - N - coins.length
     - S - amount
     - time - O(NxS)
