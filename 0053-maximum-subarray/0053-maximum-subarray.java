@@ -1,5 +1,6 @@
 class Solution {
     /*
+    n is the lentgh of the nums array
     Time - O(n)
     Space - O(1)
     */
