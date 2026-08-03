@@ -9,12 +9,14 @@ Collection of my solutions to LeetCode questions in C#, Python and Javascript - 
 | [0053-maximum-subarray](https://github.com/Ayomipo18/Data-Structures-and-Algorithms-LeetCode/tree/main/0053-maximum-subarray/) | Medium |
 | [0283-move-zeroes](https://github.com/Ayomipo18/Data-Structures-and-Algorithms-LeetCode/tree/main/0283-move-zeroes/) | Easy |
 | [0322-coin-change](https://github.com/Ayomipo18/Data-Structures-and-Algorithms-LeetCode/tree/main/0322-coin-change/) | Medium |
+| [0350-intersection-of-two-arrays-ii](https://github.com/Ayomipo18/Data-Structures-and-Algorithms-LeetCode/tree/main/0350-intersection-of-two-arrays-ii/) | Easy |
 | [1877-minimize-maximum-pair-sum-in-array](https://github.com/Ayomipo18/Data-Structures-and-Algorithms-LeetCode/tree/main/1877-minimize-maximum-pair-sum-in-array/) | Medium |
 | [1886-determine-whether-matrix-can-be-obtained-by-rotation](https://github.com/Ayomipo18/Data-Structures-and-Algorithms-LeetCode/tree/main/1886-determine-whether-matrix-can-be-obtained-by-rotation/) | Easy |
 ## Two Pointers
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0283-move-zeroes](https://github.com/Ayomipo18/Data-Structures-and-Algorithms-LeetCode/tree/main/0283-move-zeroes/) | Easy |
+| [0350-intersection-of-two-arrays-ii](https://github.com/Ayomipo18/Data-Structures-and-Algorithms-LeetCode/tree/main/0350-intersection-of-two-arrays-ii/) | Easy |
 | [1877-minimize-maximum-pair-sum-in-array](https://github.com/Ayomipo18/Data-Structures-and-Algorithms-LeetCode/tree/main/1877-minimize-maximum-pair-sum-in-array/) | Medium |
 ## Greedy
 | Problem Name | Difficulty |
@@ -23,6 +25,7 @@ Collection of my solutions to LeetCode questions in C#, Python and Javascript - 
 ## Sorting
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0350-intersection-of-two-arrays-ii](https://github.com/Ayomipo18/Data-Structures-and-Algorithms-LeetCode/tree/main/0350-intersection-of-two-arrays-ii/) | Easy |
 | [1877-minimize-maximum-pair-sum-in-array](https://github.com/Ayomipo18/Data-Structures-and-Algorithms-LeetCode/tree/main/1877-minimize-maximum-pair-sum-in-array/) | Medium |
 ## Matrix
 | Problem Name | Difficulty |
@@ -53,4 +56,12 @@ Collection of my solutions to LeetCode questions in C#, Python and Javascript - 
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0110-balanced-binary-tree](https://github.com/Ayomipo18/Data-Structures-and-Algorithms-LeetCode/tree/main/0110-balanced-binary-tree/) | Easy |
+## Hash Table
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0350-intersection-of-two-arrays-ii](https://github.com/Ayomipo18/Data-Structures-and-Algorithms-LeetCode/tree/main/0350-intersection-of-two-arrays-ii/) | Easy |
+## Binary Search
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0350-intersection-of-two-arrays-ii](https://github.com/Ayomipo18/Data-Structures-and-Algorithms-LeetCode/tree/main/0350-intersection-of-two-arrays-ii/) | Easy |
 <!---LeetCode Topics End-->
