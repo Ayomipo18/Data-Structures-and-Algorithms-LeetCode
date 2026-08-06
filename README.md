@@ -67,4 +67,12 @@ Collection of my solutions to LeetCode questions in C#, Python and Javascript - 
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0350-intersection-of-two-arrays-ii](https://github.com/Ayomipo18/Data-Structures-and-Algorithms-LeetCode/tree/main/0350-intersection-of-two-arrays-ii/) | Easy |
+## Math
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [3345-smallest-divisible-digit-product-i](https://github.com/Ayomipo18/Data-Structures-and-Algorithms-LeetCode/tree/main/3345-smallest-divisible-digit-product-i/) | Easy |
+## Enumeration
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [3345-smallest-divisible-digit-product-i](https://github.com/Ayomipo18/Data-Structures-and-Algorithms-LeetCode/tree/main/3345-smallest-divisible-digit-product-i/) | Easy |
 <!---LeetCode Topics End-->
