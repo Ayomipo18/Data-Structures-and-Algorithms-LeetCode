@@ -9,6 +9,7 @@ Collection of my solutions to LeetCode questions in C#, Python and Javascript - 
 | [0011-container-with-most-water](https://github.com/Ayomipo18/Data-Structures-and-Algorithms-LeetCode/tree/main/0011-container-with-most-water/) | Medium |
 | [0053-maximum-subarray](https://github.com/Ayomipo18/Data-Structures-and-Algorithms-LeetCode/tree/main/0053-maximum-subarray/) | Medium |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/Ayomipo18/Data-Structures-and-Algorithms-LeetCode/tree/main/0121-best-time-to-buy-and-sell-stock/) | Easy |
+| [0122-best-time-to-buy-and-sell-stock-ii](https://github.com/Ayomipo18/Data-Structures-and-Algorithms-LeetCode/tree/main/0122-best-time-to-buy-and-sell-stock-ii/) | Medium |
 | [0283-move-zeroes](https://github.com/Ayomipo18/Data-Structures-and-Algorithms-LeetCode/tree/main/0283-move-zeroes/) | Easy |
 | [0322-coin-change](https://github.com/Ayomipo18/Data-Structures-and-Algorithms-LeetCode/tree/main/0322-coin-change/) | Medium |
 | [0350-intersection-of-two-arrays-ii](https://github.com/Ayomipo18/Data-Structures-and-Algorithms-LeetCode/tree/main/0350-intersection-of-two-arrays-ii/) | Easy |
@@ -28,6 +29,7 @@ Collection of my solutions to LeetCode questions in C#, Python and Javascript - 
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0011-container-with-most-water](https://github.com/Ayomipo18/Data-Structures-and-Algorithms-LeetCode/tree/main/0011-container-with-most-water/) | Medium |
+| [0122-best-time-to-buy-and-sell-stock-ii](https://github.com/Ayomipo18/Data-Structures-and-Algorithms-LeetCode/tree/main/0122-best-time-to-buy-and-sell-stock-ii/) | Medium |
 | [1877-minimize-maximum-pair-sum-in-array](https://github.com/Ayomipo18/Data-Structures-and-Algorithms-LeetCode/tree/main/1877-minimize-maximum-pair-sum-in-array/) | Medium |
 ## Sorting
 | Problem Name | Difficulty |
@@ -44,6 +46,7 @@ Collection of my solutions to LeetCode questions in C#, Python and Javascript - 
 | ------- | ------- |
 | [0053-maximum-subarray](https://github.com/Ayomipo18/Data-Structures-and-Algorithms-LeetCode/tree/main/0053-maximum-subarray/) | Medium |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/Ayomipo18/Data-Structures-and-Algorithms-LeetCode/tree/main/0121-best-time-to-buy-and-sell-stock/) | Easy |
+| [0122-best-time-to-buy-and-sell-stock-ii](https://github.com/Ayomipo18/Data-Structures-and-Algorithms-LeetCode/tree/main/0122-best-time-to-buy-and-sell-stock-ii/) | Medium |
 | [0322-coin-change](https://github.com/Ayomipo18/Data-Structures-and-Algorithms-LeetCode/tree/main/0322-coin-change/) | Medium |
 ## Breadth-First Search
 | Problem Name | Difficulty |
