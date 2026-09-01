@@ -71,6 +71,7 @@ Collection of my solutions to LeetCode questions in C#, Python and Javascript - 
 ## Hash Table
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0003-longest-substring-without-repeating-characters](https://github.com/Ayomipo18/Data-Structures-and-Algorithms-LeetCode/tree/main/0003-longest-substring-without-repeating-characters/) | Medium |
 | [0350-intersection-of-two-arrays-ii](https://github.com/Ayomipo18/Data-Structures-and-Algorithms-LeetCode/tree/main/0350-intersection-of-two-arrays-ii/) | Easy |
 | [3718-smallest-missing-multiple-of-k](https://github.com/Ayomipo18/Data-Structures-and-Algorithms-LeetCode/tree/main/3718-smallest-missing-multiple-of-k/) | Easy |
 | [3731-find-missing-elements](https://github.com/Ayomipo18/Data-Structures-and-Algorithms-LeetCode/tree/main/3731-find-missing-elements/) | Easy |
@@ -90,4 +91,12 @@ Collection of my solutions to LeetCode questions in C#, Python and Javascript - 
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [1109-corporate-flight-bookings](https://github.com/Ayomipo18/Data-Structures-and-Algorithms-LeetCode/tree/main/1109-corporate-flight-bookings/) | Medium |
+## String
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0003-longest-substring-without-repeating-characters](https://github.com/Ayomipo18/Data-Structures-and-Algorithms-LeetCode/tree/main/0003-longest-substring-without-repeating-characters/) | Medium |
+## Sliding Window
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0003-longest-substring-without-repeating-characters](https://github.com/Ayomipo18/Data-Structures-and-Algorithms-LeetCode/tree/main/0003-longest-substring-without-repeating-characters/) | Medium |
 <!---LeetCode Topics End-->
