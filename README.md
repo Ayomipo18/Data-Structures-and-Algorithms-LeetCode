@@ -24,6 +24,7 @@ Collection of my solutions to LeetCode questions in C#, Python and Javascript - 
 | [0011-container-with-most-water](https://github.com/Ayomipo18/Data-Structures-and-Algorithms-LeetCode/tree/main/0011-container-with-most-water/) | Medium |
 | [0283-move-zeroes](https://github.com/Ayomipo18/Data-Structures-and-Algorithms-LeetCode/tree/main/0283-move-zeroes/) | Easy |
 | [0350-intersection-of-two-arrays-ii](https://github.com/Ayomipo18/Data-Structures-and-Algorithms-LeetCode/tree/main/0350-intersection-of-two-arrays-ii/) | Easy |
+| [0844-backspace-string-compare](https://github.com/Ayomipo18/Data-Structures-and-Algorithms-LeetCode/tree/main/Java/Easy/0844-backspace-string-compare/) | Easy |
 | [1877-minimize-maximum-pair-sum-in-array](https://github.com/Ayomipo18/Data-Structures-and-Algorithms-LeetCode/tree/main/1877-minimize-maximum-pair-sum-in-array/) | Medium |
 ## Greedy
 | Problem Name | Difficulty |
@@ -95,8 +96,17 @@ Collection of my solutions to LeetCode questions in C#, Python and Javascript - 
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0003-longest-substring-without-repeating-characters](https://github.com/Ayomipo18/Data-Structures-and-Algorithms-LeetCode/tree/main/0003-longest-substring-without-repeating-characters/) | Medium |
+| [0844-backspace-string-compare](https://github.com/Ayomipo18/Data-Structures-and-Algorithms-LeetCode/tree/main/Java/Easy/0844-backspace-string-compare/) | Easy |
 ## Sliding Window
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0003-longest-substring-without-repeating-characters](https://github.com/Ayomipo18/Data-Structures-and-Algorithms-LeetCode/tree/main/0003-longest-substring-without-repeating-characters/) | Medium |
+## Stack
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0844-backspace-string-compare](https://github.com/Ayomipo18/Data-Structures-and-Algorithms-LeetCode/tree/main/Java/Easy/0844-backspace-string-compare/) | Easy |
+## Simulation
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0844-backspace-string-compare](https://github.com/Ayomipo18/Data-Structures-and-Algorithms-LeetCode/tree/main/Java/Easy/0844-backspace-string-compare/) | Easy |
 <!---LeetCode Topics End-->
