@@ -87,6 +87,7 @@ Collection of my solutions to LeetCode questions in C#, Python and Javascript - 
 ## Math
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0836-rectangle-overlap](https://github.com/Ayomipo18/Data-Structures-and-Algorithms-LeetCode/tree/main/Java/Easy/0836-rectangle-overlap/) | Easy |
 | [3345-smallest-divisible-digit-product-i](https://github.com/Ayomipo18/Data-Structures-and-Algorithms-LeetCode/tree/main/3345-smallest-divisible-digit-product-i/) | Easy |
 ## Enumeration
 | Problem Name | Difficulty |
@@ -117,4 +118,8 @@ Collection of my solutions to LeetCode questions in C#, Python and Javascript - 
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0200-number-of-islands](https://github.com/Ayomipo18/Data-Structures-and-Algorithms-LeetCode/tree/main/Java/Medium/0200-number-of-islands/) | Medium |
+## Geometry
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0836-rectangle-overlap](https://github.com/Ayomipo18/Data-Structures-and-Algorithms-LeetCode/tree/main/Java/Easy/0836-rectangle-overlap/) | Easy |
 <!---LeetCode Topics End-->
