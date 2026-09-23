@@ -10,6 +10,7 @@ Collection of my solutions to LeetCode questions in C#, Python and Javascript - 
 | [0053-maximum-subarray](https://github.com/Ayomipo18/Data-Structures-and-Algorithms-LeetCode/tree/main/0053-maximum-subarray/) | Medium |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/Ayomipo18/Data-Structures-and-Algorithms-LeetCode/tree/main/0121-best-time-to-buy-and-sell-stock/) | Easy |
 | [0122-best-time-to-buy-and-sell-stock-ii](https://github.com/Ayomipo18/Data-Structures-and-Algorithms-LeetCode/tree/main/0122-best-time-to-buy-and-sell-stock-ii/) | Medium |
+| [0167-two-sum-ii-input-array-is-sorted](https://github.com/Ayomipo18/Data-Structures-and-Algorithms-LeetCode/tree/main/Java/Medium/0167-two-sum-ii-input-array-is-sorted/) | Medium |
 | [0200-number-of-islands](https://github.com/Ayomipo18/Data-Structures-and-Algorithms-LeetCode/tree/main/Java/Medium/0200-number-of-islands/) | Medium |
 | [0283-move-zeroes](https://github.com/Ayomipo18/Data-Structures-and-Algorithms-LeetCode/tree/main/0283-move-zeroes/) | Easy |
 | [0322-coin-change](https://github.com/Ayomipo18/Data-Structures-and-Algorithms-LeetCode/tree/main/0322-coin-change/) | Medium |
@@ -24,6 +25,7 @@ Collection of my solutions to LeetCode questions in C#, Python and Javascript - 
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0011-container-with-most-water](https://github.com/Ayomipo18/Data-Structures-and-Algorithms-LeetCode/tree/main/0011-container-with-most-water/) | Medium |
+| [0167-two-sum-ii-input-array-is-sorted](https://github.com/Ayomipo18/Data-Structures-and-Algorithms-LeetCode/tree/main/Java/Medium/0167-two-sum-ii-input-array-is-sorted/) | Medium |
 | [0283-move-zeroes](https://github.com/Ayomipo18/Data-Structures-and-Algorithms-LeetCode/tree/main/0283-move-zeroes/) | Easy |
 | [0350-intersection-of-two-arrays-ii](https://github.com/Ayomipo18/Data-Structures-and-Algorithms-LeetCode/tree/main/0350-intersection-of-two-arrays-ii/) | Easy |
 | [0844-backspace-string-compare](https://github.com/Ayomipo18/Data-Structures-and-Algorithms-LeetCode/tree/main/Java/Easy/0844-backspace-string-compare/) | Easy |
@@ -86,6 +88,7 @@ Collection of my solutions to LeetCode questions in C#, Python and Javascript - 
 ## Binary Search
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0167-two-sum-ii-input-array-is-sorted](https://github.com/Ayomipo18/Data-Structures-and-Algorithms-LeetCode/tree/main/Java/Medium/0167-two-sum-ii-input-array-is-sorted/) | Medium |
 | [0350-intersection-of-two-arrays-ii](https://github.com/Ayomipo18/Data-Structures-and-Algorithms-LeetCode/tree/main/0350-intersection-of-two-arrays-ii/) | Easy |
 ## Math
 | Problem Name | Difficulty |
