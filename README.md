@@ -12,6 +12,7 @@ Collection of my solutions to LeetCode questions in C#, Python and Javascript - 
 | [0122-best-time-to-buy-and-sell-stock-ii](https://github.com/Ayomipo18/Data-Structures-and-Algorithms-LeetCode/tree/main/0122-best-time-to-buy-and-sell-stock-ii/) | Medium |
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/Ayomipo18/Data-Structures-and-Algorithms-LeetCode/tree/main/Java/Medium/0167-two-sum-ii-input-array-is-sorted/) | Medium |
 | [0200-number-of-islands](https://github.com/Ayomipo18/Data-Structures-and-Algorithms-LeetCode/tree/main/Java/Medium/0200-number-of-islands/) | Medium |
+| [0238-product-of-array-except-self](https://github.com/Ayomipo18/Data-Structures-and-Algorithms-LeetCode/tree/main/Java/Medium/0238-product-of-array-except-self/) | Medium |
 | [0283-move-zeroes](https://github.com/Ayomipo18/Data-Structures-and-Algorithms-LeetCode/tree/main/0283-move-zeroes/) | Easy |
 | [0322-coin-change](https://github.com/Ayomipo18/Data-Structures-and-Algorithms-LeetCode/tree/main/0322-coin-change/) | Medium |
 | [0347-top-k-frequent-elements](https://github.com/Ayomipo18/Data-Structures-and-Algorithms-LeetCode/tree/main/Java/Medium/0347-top-k-frequent-elements/) | Medium |
@@ -107,6 +108,7 @@ Collection of my solutions to LeetCode questions in C#, Python and Javascript - 
 ## Prefix Sum
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0238-product-of-array-except-self](https://github.com/Ayomipo18/Data-Structures-and-Algorithms-LeetCode/tree/main/Java/Medium/0238-product-of-array-except-self/) | Medium |
 | [1109-corporate-flight-bookings](https://github.com/Ayomipo18/Data-Structures-and-Algorithms-LeetCode/tree/main/1109-corporate-flight-bookings/) | Medium |
 ## String
 | Problem Name | Difficulty |
