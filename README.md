@@ -6,6 +6,7 @@ Collection of my solutions to LeetCode questions in C#, Python and Javascript - 
 ## Array
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0001-two-sum](https://github.com/Ayomipo18/Data-Structures-and-Algorithms-LeetCode/tree/main/Java/Easy/0001-two-sum/) | Easy |
 | [0011-container-with-most-water](https://github.com/Ayomipo18/Data-Structures-and-Algorithms-LeetCode/tree/main/0011-container-with-most-water/) | Medium |
 | [0053-maximum-subarray](https://github.com/Ayomipo18/Data-Structures-and-Algorithms-LeetCode/tree/main/0053-maximum-subarray/) | Medium |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/Ayomipo18/Data-Structures-and-Algorithms-LeetCode/tree/main/0121-best-time-to-buy-and-sell-stock/) | Easy |
@@ -89,6 +90,7 @@ Collection of my solutions to LeetCode questions in C#, Python and Javascript - 
 ## Hash Table
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0001-two-sum](https://github.com/Ayomipo18/Data-Structures-and-Algorithms-LeetCode/tree/main/Java/Easy/0001-two-sum/) | Easy |
 | [0003-longest-substring-without-repeating-characters](https://github.com/Ayomipo18/Data-Structures-and-Algorithms-LeetCode/tree/main/0003-longest-substring-without-repeating-characters/) | Medium |
 | [0347-top-k-frequent-elements](https://github.com/Ayomipo18/Data-Structures-and-Algorithms-LeetCode/tree/main/Java/Medium/0347-top-k-frequent-elements/) | Medium |
 | [0350-intersection-of-two-arrays-ii](https://github.com/Ayomipo18/Data-Structures-and-Algorithms-LeetCode/tree/main/0350-intersection-of-two-arrays-ii/) | Easy |
