@@ -60,6 +60,7 @@ Collection of my solutions to LeetCode questions in C#, Python and Javascript - 
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0053-maximum-subarray](https://github.com/Ayomipo18/Data-Structures-and-Algorithms-LeetCode/tree/main/0053-maximum-subarray/) | Medium |
+| [0091-decode-ways](https://github.com/Ayomipo18/Data-Structures-and-Algorithms-LeetCode/tree/main/Java/Medium/0091-decode-ways/) | Medium |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/Ayomipo18/Data-Structures-and-Algorithms-LeetCode/tree/main/0121-best-time-to-buy-and-sell-stock/) | Easy |
 | [0122-best-time-to-buy-and-sell-stock-ii](https://github.com/Ayomipo18/Data-Structures-and-Algorithms-LeetCode/tree/main/0122-best-time-to-buy-and-sell-stock-ii/) | Medium |
 | [0322-coin-change](https://github.com/Ayomipo18/Data-Structures-and-Algorithms-LeetCode/tree/main/0322-coin-change/) | Medium |
@@ -122,6 +123,7 @@ Collection of my solutions to LeetCode questions in C#, Python and Javascript - 
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0003-longest-substring-without-repeating-characters](https://github.com/Ayomipo18/Data-Structures-and-Algorithms-LeetCode/tree/main/0003-longest-substring-without-repeating-characters/) | Medium |
+| [0091-decode-ways](https://github.com/Ayomipo18/Data-Structures-and-Algorithms-LeetCode/tree/main/Java/Medium/0091-decode-ways/) | Medium |
 | [0844-backspace-string-compare](https://github.com/Ayomipo18/Data-Structures-and-Algorithms-LeetCode/tree/main/Java/Easy/0844-backspace-string-compare/) | Easy |
 ## Sliding Window
 | Problem Name | Difficulty |
